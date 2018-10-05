@@ -1,0 +1,22 @@
+<main role="main" class="container">
+  <div class="page-heading">
+      <h2 class="mt-4">VP Leaderboard</h2>
+      <p class="lead">Friend Steps Leaderboard</p>
+  </div>
+
+    <ul class="friends-list">
+      <li class='friends-list--header'>
+        <span>Friend</span>
+        <span>Steps</span>
+      </li>
+      <li ng-repeat="user in users">
+        <span>
+            {{ user.name.first }} {{ user.name.last }}
+        </span>
+        <span>
+          {{ user.steps }}
+        </span>
+      </li>
+    </ul>
+
+</main>
